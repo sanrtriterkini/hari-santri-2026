@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selamat Hari Santri Nasional 2026 | MA Al-Amin</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* =========================
+       VARIABEL WARNA & DASAR
+    ========================== */
+    :root {
+      --hijau-tua: #0b3d2e;
+      --hijau: #14694f;
+      --hijau-muda: #1f8a68;
+      --emas: #d4af37;
+      --emas-muda: #f0d67a;
+      --krem: #fdf8ee;
+      --putih: #ffffff;
+      --teks: #1f2937;
+      --teks-lembut: #55606b;
+      --bayangan: 0 18px 40px rgba(11, 61, 46, .16);
+      --radius: 20px;
+    }
+
+    /* Tema gelap */
+    body.dark {
+      --hijau-tua: #071f18;
+      --hijau: #0f4c39;
+      --krem: #10201b;
+      --putih: #152a23;
+      --teks: #e8f3ee;
+      --teks-lembut: #a9c3ba;
+      --bayangan: 0 18px 40px rgba(0, 0, 0, .45);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background:
+        radial-gradient(circle at 10% 10%, rgba(212, 175, 55, .18), transparent 35%),
+        radial-gradient(circle at 90% 15%, rgba(31, 138, 104, .22), transparent 40%),
+        linear-gradient(160deg, var(--krem), var(--putih));
+      color: var(--teks);
+      min-height: 100vh;
+      overflow-x: hidden;
+      transition: background .4s ease, color .4s ease;
+    }
+
+    .container {
+      width: min(1150px, 92%);
+      margin: auto;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--hijau-tua);
+      line-height: 1.25;
+    }
+
+    body.dark h1,
+    body.dark h2,
+    body.dark h3 {
+      color: var(--emas-muda);
+    }
+
+    p {
+      color: var(--teks-lembut);
+      line-height: 1.75;
+    }
+
+    /* =========================
+       NAVBAR
+    ========================== */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(14px);
+      background: rgba(255, 255, 255, .78);
+      border-bottom: 1px solid rgba(212, 175, 55, .25);
+      transition: .3s;
+    }
+
+    body.dark header {
+      background: rgba(11, 32, 27, .85);
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      font-size: 20px;
+      color: var(--hijau-tua);
+    }
+
+    body.dark .logo {
+      color: var(--emas-muda);
+    }
+
+    .logo-mark {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--hijau), var(--hijau-muda));
+      color: var(--emas-muda);
+      box-shadow: var(--bayangan);
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .nav-menu a {
+      text-decoration: none;
+      color: var(--teks);
+      font-weight: 600;
+      font-size: 15px;
+      position: relative;
+    }
+
+    .nav-menu a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 0;
+      height: 2px;
+      background: var(--emas);
+      transition: .3s;
+    }
+
+    .nav-menu a:hover::after {
+      width: 100%;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .theme-btn {
+      width: 42px;
+      height: 42px;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      background: var(--putih);
+      color: var(--hijau-tua);
+      box-shadow: var(--bayangan);
+      display: grid;
+      place-items: center;
+      transition: .3s;
+    }
+
+    .theme-btn:hover {
+      transform: rotate(20deg);
+    }
+
+    /* =========================
+       TOMBOL
+    ========================== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px 26px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      transition: .3s;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--hijau), var(--hijau-muda));
+      color: var(--putih);
+      box-shadow: var(--bayangan);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+    }
+
+    .btn-gold {
+      background: linear-gradient(135deg, var(--emas), var(--emas-muda));
+      color: #3b2c05;
+      box-shadow: var(--bayangan);
+    }
+
+    .btn-gold:hover {
+      transform: translateY(-3px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--hijau-tua);
+      border: 2px solid var(--emas);
+    }
+
+    body.dark .btn-outline {
+      color: var(--emas-muda);
+    }
+
+    .btn-outline:hover {
+      background: rgba(212, 175, 55, .15);
+    }
+
+    .pulse {
+      animation: pulse 2.2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, .55); }
+      50% { box-shadow: 0 0 0 14px rgba(212, 175, 55, 0); }
+    }
+
+    /* =========================
+       HERO
+    ========================== */
+    .hero {
+      position: relative;
+      padding: 110px 0 90px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(circle at 20% 20%, rgba(212, 175, 55, .22) 0 2px, transparent 3px),
+        radial-gradient(circle at 70% 60%, rgba(20, 105, 79, .2) 0 2px, transparent 3px);
+      background-size: 45px 45px;
+      opacity: .35;
+      pointer-events: none;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 18px;
+      border-radius: 999px;
+      background: rgba(212, 175, 55, .18);
+      color: var(--hijau-tua);
+      font-weight: 700;
+      font-size: 14px;
+      border: 1px solid rgba(212, 175, 55, .45);
+    }
+
+    body.dark .hero-badge {
+      color: var(--emas-muda);
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 6vw, 62px);
+      font-weight: 800;
+      margin: 22px 0 16px;
+      background: linear-gradient(120deg, var(--hijau-tua), var(--emas));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero-sub {
+      font-size: clamp(18px, 2.6vw, 26px);
+      font-weight: 700;
+      color: var(--hijau);
+      margin-bottom: 8px;
+    }
+
+    .slogan {
+      font-size: clamp(16px, 2.2vw, 22px);
+      font-style: italic;
+      font-weight: 600;
+      color: var(--teks-lembut);
+      min-height: 32px;
+    }
+
+    .hero-date {
+      margin-top: 18px;
+      font-weight: 600;
+      color: var(--teks-lembut);
+    }
+
+    .hero-buttons {
+      margin-top: 32px;
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .hero-ornament {
+      margin-top: 45px;
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      color: var(--emas);
+      font-size: 30px;
+    }
+
+    /* Animasi teks muncul */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(25px);
+      animation: fadeUp .9s forwards;
+    }
+
+    .delay-1 { animation-delay: .2s; }
+    .delay-2 { animation-delay: .4s; }
+    .delay-3 { animation-delay: .6s; }
+    .delay-4 { animation-delay: .8s; }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* =========================
+       KARTU & GRID
+    ========================== */
+    .section-title {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 45px;
+    }
+
+    .section-title h2 {
+      font-size: clamp(28px, 4vw, 40px);
+      margin-bottom: 12px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: var(--putih);
+      border: 1px solid rgba(212, 175, 55, .25);
+      border-radius: var(--radius);
+      padding: 30px;
+      box-shadow: var(--bayangan);
+      transition: .35s;
+      opacity: 0;
+      transform: translateY(35px);
+    }
+
+    .card.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: var(--emas);
+    }
+
+    .card-icon {
+      width: 60px;
+      height: 60px;
+      display: grid;
+      place-items: center;
+      border-radius: 18px;
+      background: linear-gradient(135deg, var(--hijau), var(--hijau-muda));
+      color: var(--emas-muda);
+      margin-bottom: 18px;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    /* =========================
+       FORM UCAPAN
+    ========================== */
+    .form-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+      align-items: start;
+    }
+
+    .form-card {
+      background: var(--putih);
+      padding: 35px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(212, 175, 55, .3);
+      box-shadow: var(--bayangan);
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--hijau-tua);
+    }
+
+    body.dark label {
+      color: var(--emas-muda);
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 14px 16px;
+      border-radius: 14px;
+      border: 1.5px solid #d8d8d8;
+      background: var(--krem);
+      color: var(--teks);
+      font-family: inherit;
+      font-size: 15px;
+      transition: .25s;
+    }
+
+    body.dark input,
+    body.dark textarea {
+      border-color: #2f4f45;
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: none;
+      border-color: var(--emas);
+      box-shadow: 0 0 0 4px rgba(212, 175, 55, .18);
+    }
+
+    textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    .form-message {
+      min-height: 24px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .error { color: #d14343; }
+    .success { color: var(--hijau-muda); }
+
+    /* =========================
+       GALERI UCAPAN
+    ========================== */
+    .counter-box {
+      text-align: center;
+      background: linear-gradient(135deg, var(--hijau-tua), var(--hijau));
+      color: var(--putih);
+      padding: 35px;
+      border-radius: var(--radius);
+      box-shadow: var(--bayangan);
+      margin-bottom: 35px;
+    }
+
+    .counter-number {
+      font-size: 48px;
+      font-weight: 800;
+      color: var(--emas-muda);
+    }
+
+    .galeri-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .ucapan-card {
+      background: var(--putih);
+      border-radius: var(--radius);
+      padding: 24px;
+      border: 1px solid rgba(212, 175, 55, .25);
+      box-shadow: var(--bayangan);
+      position: relative;
+    }
+
+    .ucapan-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+
+    .avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      color: var(--putih);
+      background: linear-gradient(135deg, var(--hijau), var(--emas));
+    }
+
+    .ucapan-name {
+      font-weight: 700;
+      color: var(--hijau-tua);
+    }
+
+    body.dark .ucapan-name {
+      color: var(--emas-muda);
+    }
+
+    .ucapan-status {
+      font-size: 13px;
+      color: var(--teks-lembut);
+    }
+
+    .delete-btn {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 32px;
+      height: 32px;
+      border: none;
+      border-radius: 50%;
+      background: #fee2e2;
+      color: #b91c1c;
+      cursor: pointer;
+      font-weight: 800;
+      transition: .25s;
+    }
+
+    .delete-btn:hover {
+      background: #fecaca;
+      transform: scale(1.1);
+    }
+
+    .empty-message {
+      text-align: center;
+      padding: 35px;
+      border: 2px dashed rgba(212, 175, 55, .5);
+      border-radius: var(--radius);
+      color: var(--teks-lembut);
+    }
+
+    /* =========================
+       NOTIFIKASI
+    ========================== */
+    .toast {
+      position: fixed;
+      bottom: 25px;
+      left: 50%;
+      transform: translateX(-50%) translateY(150px);
+      background: var(--hijau-tua);
+      color: var(--putih);
+      padding: 15px 25px;
+      border-radius: 999px;
+      box-shadow: var(--bayangan);
+      font-weight: 600;
+      z-index: 200;
+      transition: .45s cubic-bezier(.2, .9, .3, 1.3);
+    }
+
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+    }
+
+    /* =========================
+       CONFETTI
+    ========================== */
+    .confetti {
+      position: fixed;
+      width: 10px;
+      height: 10px;
+      top: -15px;
+      z-index: 150;
+      pointer-events: none;
+      animation: fall linear forwards;
+    }
+
+    @keyframes fall {
+      to {
+        transform: translateY(105vh) rotate(720deg);
+        opacity: 0;
+      }
+    }
+
+    /* =========================
+       FOOTER
+    ========================== */
+    footer {
+      background: var(--hijau-tua);
+      color: #d9e8e2;
+      text-align: center;
+      padding: 45px 20px;
+    }
+
+    footer strong {
+      color: var(--emas-muda);
+    }
+
+    .footer-slogan {
+      margin: 8px 0 15px;
+      font-style: italic;
+      color: #cfe4dc;
+    }
+
+    /* =========================
+       RESPONSIF
+    ========================== */
+    @media (max-width: 820px) {
+      .nav-menu {
+        display: none;
+      }
+
+      .form-wrapper {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       NAVBAR
+  ========================== -->
+  <header>
+    <div class="container navbar">
+      <div class="logo">
+        <div class="logo-mark">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 3a7 7 0 0 0 0 14 7 7 0 0 1 0-14z"/>
+            <path d="M17 5a7 7 0 0 1 0 14"/>
+          </svg>
+        </div>
+        MA Al-Amin
+      </div>
+
+      <nav class="nav-menu">
+        <a href="#beranda">Beranda</a>
+        <a href="#pesan">Pesan Santri</a>
+        <a href="#galeri">Galeri</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-btn" id="themeToggle" title="Ganti tema">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/>
+          </svg>
+        </button>
+
+        <a href="#kirim" class="btn btn-gold pulse">Kirim Ucapan</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================
+       HERO
+  ========================== -->
+  <section class="hero" id="beranda">
+    <div class="container">
+      <div class="hero-badge fade-up">
+        <span>🌙</span> Hari Santri Nasional
+      </div>
+
+      <h1 class="fade-up delay-1">
+        Selamat Hari Santri Nasional 2026
+      </h1>
+
+      <p class="hero-sub fade-up delay-2">
+        Madrasah Aliyah Al-Amin Go Digital
+      </p>
+
+      <p class="slogan fade-up delay-2" id="sloganText"></p>
+
+      <p class="hero-date fade-up delay-3">
+        📅 Dirayakan pada 22 Oktober 2026
+      </p>
+
+      <div class="hero-buttons fade-up delay-4">
+        <a href="#kirim" class="btn btn-primary">Kirim Ucapan</a>
+        <a href="#galeri" class="btn btn-outline">Lihat Pesan Santri</a>
+      </div>
+
+      <div class="hero-ornament fade-up delay-4">
+        <span>✦</span>
+        <span>📖</span>
+        <span>🕌</span>
+        <span>💻</span>
+        <span>✦</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       SAMBUTAN
+  ========================== -->
+  <section id="pesan">
+    <div class="container">
+      <div class="section-title">
+        <h2>Makna Hari Santri bagi MA Al-Amin</h2>
+        <p>
+          Hari Santri Nasional menjadi momen untuk mengenang perjuangan santri dalam menjaga
+          nilai keislaman, memperkuat moderasi beragama, dan mengabdi bagi bangsa. Bagi
+          Madrasah Aliyah Al-Amin, semangat santri juga berarti siap beradaptasi dengan
+          teknologi digital tanpa meninggalkan akhlak mulia dan semangat menuntut ilmu.
+        </p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <div class="card-icon">📖</div>
+          <h3>Cinta Ilmu</h3>
+          <p>Santri dituntut untuk terus belajar, berpikir kritis, dan mengembangkan ilmu yang bermanfaat bagi diri serta masyarakat.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🤲</div>
+          <h3>Berakhlak Mulia</h3>
+          <p>Keunggulan santri tidak hanya terletak pada ilmunya, tetapi juga pada akhlak, kejujuran, dan keteladanannya.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🤝</div>
+          <h3>Moderasi Beragama</h3>
+          <p>Santri menjaga sikap toleran, menghargai perbedaan, dan memperkuat kerukunan dalam kehidupan berbangsa.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">💻</div>
+          <h3>Adaptif Teknologi</h3>
+          <p>Santri Al-Amin siap menghadapi era digital dengan memanfaatkan teknologi secara bijak, kreatif, dan bertanggung jawab.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       FORM KIRIM UCAPAN
+  ========================== -->
+  <section id="kirim">
+    <div class="container">
+      <div class="section-title">
+        <h2>Kirim Ucapan Hari Santri</h2>
+        <p>
+          Sampaikan doa, motivasi, dan ucapan selamat Hari Santri Nasional 2026 untuk keluarga besar Madrasah Aliyah Al-Amin.
+        </p>
+      </div>
+
+      <div class="form-wrapper">
+        <div class="form-card">
+          <div class="form-message" id="formMessage"></div>
+
+          <form id="ucapanForm">
+            <div class="form-group">
+              <label for="nama">Nama</label>
+              <input type="text" id="nama" placeholder="Contoh: Ahmad Fauzi">
+            </div>
+
+            <div class="form-group">
+              <label for="status">Kelas / Status</label>
+              <input type="text" id="status" placeholder="Contoh: X IPA 1, Guru, Alumni">
+            </div>
+
+            <div class="form-group">
+              <label for="isiUcapan">Ucapan Selamat Hari Santri</label>
+              <textarea id="isiUcapan" placeholder="Tulis ucapan, doa, atau motivasi untuk santri MA Al-Amin..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary pulse">
+              Kirim Ucapan
+            </button>
+          </form>
+        </div>
+
+        <div class="card">
+          <h3>Santri Digital, Generasi Berkemajuan</h3>
+          <p>
+            Santri bukan hanya penjaga tradisi keilmuan Islam, tetapi juga pelaku perubahan.
+            Di era digital, santri MA Al-Amin didorong untuk menggunakan teknologi guna
+            menyebarkan ilmu, memperkuat moderasi, dan menghadirkan konten positif.
+          </p>
+
+          <div style="margin-top: 20px;">
+            <p><strong>🌙 Belajar dan beribadah dengan ikhlas</strong></p>
+            <p><strong>💻 Berinovasi melalui teknologi</strong></p>
+            <p><strong>🤝 Menguatkan persatuan dan moderasi</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       GALERI UCAPAN
+  ========================== -->
+  <section id="galeri">
+    <div class="container">
+      <div class="section-title">
+        <h2>Galeri Ucapan Santri</h2>
+        <p>
+          Berikut ucapan dan doa yang telah dikirim oleh siswa, guru, alumni, serta masyarakat.
+        </p>
+      </div>
+
+      <div class="counter-box">
+        <div class="counter-number" id="counter">0</div>
+        <p style="color: #d9e8e2;">Ucapan telah dikirim</p>
+      </div>
+
+      <div class="galeri-grid" id="galeriUcapan"></div>
+    </div>
+  </section>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer>
+    <div class="container">
+      <h3 style="color: var(--emas-muda); margin-bottom: 8px;">
+        Madrasah Aliyah Al-Amin Go Digital
+      </h3>
+
+      <p class="footer-slogan">
+        “Being Different To Be Smart”
+      </p>
+
+      <p>© 2026 Madrasah Aliyah Al-Amin. Selamat Hari Santri Nasional.</p>
+    </div>
+  </footer>
+
+  <!-- Notifikasi -->
+  <div class="toast" id="toast"></div>
+
+  <script>
+    /* =========================
+       DATA & ELEMEN
+    ========================== */
+    const STORAGE_KEY = "ucapanHariSantri2026";
+
+    const form = document.getElementById("ucapanForm");
+    const namaInput = document.getElementById("nama");
+    const statusInput = document.getElementById("status");
+    const isiInput = document.getElementById("isiUcapan");
+    const formMessage = document.getElementById("formMessage");
+
+    const galeri = document.getElementById("galeriUcapan");
+    const counter = document.getElementById("counter");
+    const toast = document.getElementById("toast");
+    const themeToggle = document.getElementById("themeToggle");
+
+    /* =========================
+       SLIDING / TYPEWRITER SLOGAN
+    ========================== */
+    const slogan = "Being Different To Be Smart";
+    const sloganText = document.getElementById("sloganText");
+    let index = 0;
+
+    function typeSlogan() {
+      if (index <= slogan.length) {
+        sloganText.textContent = slogan.slice(0, index);
+        index++;
+        setTimeout(typeSlogan, 90);
+      }
+    }
+
+    typeSlogan();
+
+    /* =========================
+       TEMA GELAP / TERANG
+    ========================== */
+    themeToggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+
+      const tema = document.body.classList.contains("dark") ? "dark" : "light";
+      localStorage.setItem("temaHariSantri", tema);
+    });
+
+    // Memuat tema tersimpan
+    if (localStorage.getItem("temaHariSantri") === "dark") {
+      document.body.classList.add("dark");
+    }
+
+    /* =========================
+       AMBIL DATA DARI LOCALSTORAGE
+    ========================== */
+    function getUcapan() {
+      return JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+    }
+
+    function simpanUcapan(data) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    }
+
+    /* =========================
+       TAMPILKAN UCAPAN
+    ========================== */
+    function tampilkanUcapan() {
+      const data = getUcapan();
+      galeri.innerHTML = "";
+
+      if (data.length === 0) {
+        galeri.innerHTML = `
+          <div class="empty-message">
+            Belum ada ucapan. Jadilah yang pertama mengirim ucapan Hari Santri! 🌙
+          </div>
+        `;
+      } else {
+        data.forEach((item, i) => {
+          const kartu = document.createElement("div");
+          kartu.className = "ucapan-card";
+
+          kartu.innerHTML = `
+            <button class="delete-btn" data-index="${i}" title="Hapus ucapan">×</button>
+
+            <div class="ucapan-header">
+              <div class="avatar">${item.nama.charAt(0).toUpperCase()}</div>
+
+              <div>
+                <div class="ucapan-name">${escapeHTML(item.nama)}</div>
+                <div class="ucapan-status">${escapeHTML(item.status || "Santri MA Al-Amin")}</div>
+              </div>
+            </div>
+
+            <p>${escapeHTML(item.isi)}</p>
+          `;
+
+          galeri.appendChild(kartu);
+        });
+      }
+
+      animasiCounter(data.length);
+    }
+
+    /* =========================
+       KEAMANAN TEKS
+    ========================== */
+    function escapeHTML(text) {
+      const div = document.createElement("div");
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    /* =========================
+       ANIMASI COUNTER
+    ========================== */
+    function animasiCounter(target) {
+      let nilai = 0;
+      const kecepatan = Math.max(20, Math.floor(600 / target || 1));
+
+      const interval = setInterval(() => {
+        nilai++;
+        counter.textContent = nilai;
+
+        if (nilai >= target) {
+          clearInterval(interval);
+        }
+      }, kecepatan);
+    }
+
+    /* =========================
+       KIRIM UCAPAN
+    ========================== */
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const nama = namaInput.value.trim();
+      const status = statusInput.value.trim();
+      const isi = isiInput.value.trim();
+
+      // Validasi wajib isi
+      if (!nama || !isi) {
+        formMessage.className = "form-message error";
+        formMessage.textContent = "Mohon isi nama dan ucapan terlebih dahulu, ya. 😊";
+        return;
+      }
+
+      const dataBaru = {
+        nama,
+        status,
+        isi,
+        waktu: new Date().toISOString()
+      };
+
+      const data = getUcapan();
+      data.unshift(dataBaru);
+      simpanUcapan(data);
+
+      tampilkanUcapan();
+
+      // Notifikasi sukses
+      tampilkanToast("Ucapan berhasil dikirim. Terima kasih! 🌙");
+
+      // Efek confetti
+      buatConfetti();
+
+      // Reset formulir
+      form.reset();
+      formMessage.className = "form-message success";
+      formMessage.textContent = "Alhamdulillah, ucapan Anda telah ditambahkan ke galeri.";
+    });
+
+    /* =========================
+       HAPUS UCAPAN
+    ========================== */
+    galeri.addEventListener("click", function (event) {
+      if (event.target.classList.contains("delete-btn")) {
+        const index = event.target.dataset.index;
+        const data = getUcapan();
+
+        data.splice(index, 1);
+        simpanUcapan(data);
+        tampilkanUcapan();
+
+        tampilkanToast("Ucapan berhasil dihapus.");
+      }
+    });
+
+    /* =========================
+       NOTIFIKASI TOAST
+    ========================== */
+    function tampilkanToast(pesan) {
+      toast.textContent = pesan;
+      toast.classList.add("show");
+
+      setTimeout(() => {
+        toast.classList.remove("show");
+      }, 3000);
+    }
+
+    /* =========================
+       EFEK CONFETTI SEDERHANA
+    ========================== */
+    function buatConfetti() {
+      const warna = ["#d4af37", "#14694f", "#1f8a68", "#f0d67a", "#ffffff"];
+
+      for (let i = 0; i < 60; i++) {
+        const confetti = document.createElement("div");
+        confetti.className = "confetti";
+
+        confetti.style.left = Math.random() * 100 + "vw";
+        confetti.style.background = warna[Math.floor(Math.random() * warna.length)];
+        confetti.style.animationDuration = 2 + Math.random() * 2 + "s";
+        confetti.style.animationDelay = Math.random() * .5 + "s";
+        confetti.style.borderRadius = Math.random() > .5 ? "50%" : "3px";
+
+        document.body.appendChild(confetti);
+
+        setTimeout(() => confetti.remove(), 4500);
+      }
+    }
+
+    /* =========================
+       ANIMASI KARTU SAAT SCROLL
+    ========================== */
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    }, {
+      threshold: .15
+    });
+
+    document.querySelectorAll(".card").forEach(card => {
+      observer.observe(card);
+    });
+
+    /* =========================
+       MUAT DATA AWAL
+    ========================== */
+    tampilkanUcapan();
+  </script>
+</body>
+</html>
